@@ -12,5 +12,5 @@ iOS Safari 환경에서 웹페이지의 글씨 가독성을 높이기 위해 자
 1. 아이폰에서 `wblock` 앱 설정으로 들어갑니다.
 2. 스크립트 추가 메뉴에서 **URL로 추가(또는 URL에서 다운로드)** 를 선택합니다.
 3. 아래의 Raw 링크를 복사하여 붙여넣고 설치합니다.
-   ```text
-   [https://raw.githubusercontent.com/ppodori/my-userscripts/main/text-style-override.user.js](https://raw.githubusercontent.com/ppodori/my-userscripts/main/text-style-override.user.js)
+   ```
+   https://raw.githubusercontent.com/ppodori/my-userscripts/main/text-style-override.user.js
