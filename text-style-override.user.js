@@ -3,7 +3,7 @@
 // @namespace    https://github.com/ppodori
 // @author       ppodori
 // @homepageURL  https://github.com/ppodori/my-userscripts
-// @version      2.0
+// @version      2.1
 // @description  자간 조절 및 글씨 외곽선 적용 (+ FM코리아 제목 링크 폰트 Black으로 교체)
 // @match        *://*/*
 // @run-at       document-start
