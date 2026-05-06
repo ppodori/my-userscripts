@@ -21,7 +21,7 @@
         select, 
         textarea { 
             letter-spacing: -0.5px !important; 
-            -webkit-text-stroke-width: 0.3px !important; 
+            -webkit-text-stroke-width: 0.45px !important; 
         }
 
         /* FM Korea: 제목 및 카테고리 링크 색상 */
