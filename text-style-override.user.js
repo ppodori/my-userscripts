@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Text Style Override (iOS Safari Optimized)
+// @name         Text Style Override
 // @namespace    https://github.com/ppodori
 // @author       ppodori
 // @homepageURL  https://github.com/ppodori/my-userscripts
