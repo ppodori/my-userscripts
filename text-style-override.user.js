@@ -3,8 +3,8 @@
 // @namespace    https://github.com/ppodori
 // @author       ppodori
 // @homepageURL  https://github.com/ppodori/my-userscripts
-// @version      2.5
-// @description  자간 조절 및 글씨 외곽선 적용 (+ FM코리아 제목 링크 색상 #111로 교체)
+// @version      2.6
+// @description  자간 조절 (+ FM코리아 제목 링크 색상 #111로 교체)
 // @match        *://*/*
 // @run-at       document-start
 // @grant        none
@@ -16,11 +16,10 @@
 
     const isFM = /(^|\.)fmkorea\.com$/.test(location.hostname);
 
-    /* 전역: 자간 조절 및 글씨 외곽선 */
+    /* 전역: 자간 조절 */
     const globalCSS = `
         body, button, input, select, textarea {
             letter-spacing: -0.5px !important;
-            -webkit-text-stroke-width: 0.15px !important;
         }
     `;
 
