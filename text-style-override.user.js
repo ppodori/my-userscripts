@@ -3,8 +3,8 @@
 // @namespace    https://github.com/ppodori
 // @author       ppodori
 // @homepageURL  https://github.com/ppodori/my-userscripts
-// @version      2.8
-// @description  자간 조절 및 글씨 외곽선 적용 (+ FM코리아 제목 링크 색상 #111로 교체)
+// @version      2.9
+// @description  자간 조절 및 글씨 외곽선 적용
 // @match        *://*/*
 // @run-at       document-start
 // @grant        none
@@ -14,28 +14,19 @@
 (function () {
     'use strict';
 
-    const isFM = /(^|\.)fmkorea\.com$/.test(location.hostname);
+    const TARGET_SELECTORS = ['body', 'button', 'input', 'select', 'textarea'];
+    const STYLE_RULES = [
+        'letter-spacing: -0.2px !important;',
+        '-webkit-text-stroke-width: 0.1px !important;',
+    ];
 
-    /* 전역: 자간 조절 및 글씨 외곽선 */
     const globalCSS = `
-        body, button, input, select, textarea {
-            letter-spacing: -0.2px !important;
-            -webkit-text-stroke-width: 0.1px !important;
-        }
-    `;
-
-    /* FM코리아 전용: 제목 및 카테고리 링크 색상 */
-    const fmCSS = `
-        .fm_best_widget .title a,
-        h3.title a,
-        .hotdeal_info a,
-        .hotdeal_info span,
-        .category a {
-            color: #111 !important;
+        ${TARGET_SELECTORS.join(', ')} {
+            ${STYLE_RULES.join('\n            ')}
         }
     `;
 
     const style = document.createElement('style');
-    style.textContent = globalCSS + (isFM ? fmCSS : '');
+    style.textContent = globalCSS;
     (document.head || document.documentElement).appendChild(style);
 })();
