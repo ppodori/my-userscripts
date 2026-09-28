@@ -19,7 +19,7 @@
     /* 전역: 자간 조절 및 글씨 외곽선 */
     const globalCSS = `
         body, button, input, select, textarea {
-            letter-spacing: -0.5px !important;
+            letter-spacing: -0.2px !important;
             -webkit-text-stroke-width: 0.1px !important;
         }
     `;
