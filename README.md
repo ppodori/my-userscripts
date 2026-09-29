@@ -4,8 +4,8 @@
 
 ## 기능
 
-- 주요 입력/버튼/본문 태그에 `letter-spacing: -0.2px` 적용
-- 같은 범위에 `-webkit-text-stroke-width: 0.1px` 적용
+- 주요 입력/버튼/본문 태그에 `letter-spacing` 적용
+- 같은 범위에 `-webkit-text-stroke-width` 적용
 
 ## 설치
 
