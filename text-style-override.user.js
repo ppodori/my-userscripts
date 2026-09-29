@@ -3,7 +3,7 @@
 // @namespace    https://github.com/ppodori
 // @author       ppodori
 // @homepageURL  https://github.com/ppodori/my-userscripts
-// @version      3.0
+// @version      3.1
 // @description  자간 조절 및 글씨 외곽선 적용
 // @match        *://*/*
 // @run-at       document-start
