@@ -4,8 +4,9 @@
 
 ## 기능
 
-- 주요 입력/버튼/본문 태그에 `letter-spacing` 적용
+- `body`와 폼 요소(`button`, `input`, `select`, `textarea`)에 `letter-spacing` 적용
 - 같은 범위에 `-webkit-text-stroke-width` 적용
+- 최상위 페이지에서만 동작 (iframe 제외)
 
 ## 설치
 
