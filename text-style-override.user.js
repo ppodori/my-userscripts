@@ -3,7 +3,7 @@
 // @namespace    https://github.com/ppodori
 // @author       ppodori
 // @homepageURL  https://github.com/ppodori/my-userscripts
-// @version      3.2
+// @version      3.3
 // @description  자간 조절 및 글씨 외곽선 적용
 // @match        *://*/*
 // @run-at       document-start
@@ -18,7 +18,7 @@
     const TARGET_SELECTORS = ['body', 'button', 'input', 'select', 'textarea'];
     const STYLE_RULES = [
         'letter-spacing: -0.2px !important;',
-        '-webkit-text-stroke-width: 0.25px !important;',
+        '-webkit-text-stroke-width: 0.1px !important;',
     ];
 
     const globalCSS = `
